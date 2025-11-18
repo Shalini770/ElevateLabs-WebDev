@@ -1,0 +1,134 @@
+/* --------------------------
+   DESKTOP STYLES (Default)
+--------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-btn {
+    display: none; /* show only in mobile */
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    border: #222 solid;
+}
+
+/* Content Boxes */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #eee;
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 8px;
+    border: #222 solid;
+}
+
+/* --------------------------
+   MOBILE RESPONSIVE STYLES
+   (max-width: 768px)
+--------------------------- */
+
+@media (max-width: 768px) {
+
+    /* Stack header items vertically */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Reduce logo size */
+    .logo {
+        font-size: 22px;
+    }
+
+    /* Show hamburger menu */
+    .menu-btn {
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Collapse navigation */
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        display: none; /* hidden by default */
+    }
+
+    /* Show navigation when menu is opened */
+    .nav.open ul {
+        display: flex;
+    }
+
+    /* Hero section adjustments */
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Stack content boxes vertically */
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
