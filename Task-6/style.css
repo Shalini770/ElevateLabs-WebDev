@@ -1,0 +1,97 @@
+/* Basic styling for clarity */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+    height: 500px;
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: rgb(43, 43, 226);
+}
+
+/* form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+} */
+
+/* Form styles */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid darkslategray;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: .5em;
+}
+
+/* Success banner */
+.success{
+  display: none;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+/* Submit button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color:rgb(43, 43, 226);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
